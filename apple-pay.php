@@ -1,5 +1,7 @@
 <?php
 
+$sReceiver = '_____YOUR EMAIL HERE_____';
+
 error_reporting(E_ALL);
 
 /**
@@ -94,7 +96,7 @@ try {
                 $headers[] = "Subject: {$betreff}";
                 $headers[] = "X-Mailer: PHP/".phpversion();
 
-        mail("applepay@alanin.de", $betreff, implode("\r\n", $aReturn), implode("\r\n",$headers), '-fapplepay@alanin.de');
+        mail($sReceiver, $betreff, implode("\r\n", $aReturn), implode("\r\n",$headers), '-f'.$sReceiver);
         } else {
                 #print 'nothing changed...';
         }
