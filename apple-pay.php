@@ -83,7 +83,7 @@ function checkApplePay()
 }
 
 try {
-    $aReturn = checkApplePay();
+    $aReturn = checkApplePay($sReceiver);
 
         if(count($aReturn) !== 0) {
                 $betreff = 'ApplePay - New Region found';
