@@ -1,1 +1,2 @@
-# apple-pay-new-region
+# Simple Script to check for new regions added to Apple Pay JSON file
+written very fast, just to do it's job. no need to be beautiful...
