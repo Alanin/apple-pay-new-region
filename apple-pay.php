@@ -87,12 +87,11 @@ try {
 
         if(count($aReturn) !== 0) {
                 $betreff = 'ApplePay - New Region found';
-                $absender = 'applepay@alanin.de';
 
                 $headers   = array();
                 $headers[] = "MIME-Version: 1.0";
                 $headers[] = "Content-type: text/plain; charset=utf-8";
-                $headers[] = "From: {$absender}";
+                $headers[] = "From: {$sReceiver}";
                 $headers[] = "Subject: {$betreff}";
                 $headers[] = "X-Mailer: PHP/".phpversion();
 
